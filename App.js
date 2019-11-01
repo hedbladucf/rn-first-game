@@ -46,11 +46,6 @@ export default function App() {
   };
 
   let content = <StartGameScreen onStartGame={startGameHandler} />;
-  content = <GameOverScreen
-      roundsNumber={1}
-      userNumber={1}
-      onRestart={restartGameHandler}
-    />;
 
   if (userNumber && numberOfRounds <= 0) {
     content = <GameScreen
